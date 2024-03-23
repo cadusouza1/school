@@ -1,0 +1,103 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\begin{document}
+\begin{enumerate}
+	\item \begin{enumerate}
+		      \item \begin{flalign*}
+			             & \frac{ d }{ dx } 5^x + \log_3 x                  & \\
+			             & \frac{ d }{ dx } 5^x + \frac{ d }{ dx } \log_3 x & \\
+			             & 5^x \ln(5) + \frac{ 1 }{ x \ln(3) }              & \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & \frac{ d }{ dx } \arctan(x^2 + 1) & \\
+			             & \frac{ 2x }{ 1 + (x^2 + 1)^2 }    & \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & \frac{ d }{ dx } \arcsin(e^x)       & \\
+			             & \frac{ 1 }{ \sqrt{1 - e^{2x} }} e^x & \\
+			             & \frac{ e^x }{ \sqrt{1 - e^{2x} }}   & \\
+		            \end{flalign*}
+	      \end{enumerate}
+
+	\item
+	      \begin{flalign*}
+		       & \lim_{x \to 0} \frac{ \sin(3x) }{ x } = \frac{ 0 }{ 0 } & \\
+		       & \lim_{x \to 0} \frac{ 3 \cos{3x} }{ 1 }                 & \\
+		       & \lim_{x \to 0} 3 \cos{3x} = 3                           & \\
+	      \end{flalign*}
+
+	\item \begin{flalign*}
+		       &  & \\
+	      \end{flalign*}
+
+	\item \begin{flalign*}
+		       & L(x) = f(0) + f'(0)(x - 0) & \\
+		       & L(x) = \sin(0) + \cos(0)x  & \\
+		       & L(x) = x                   & \\
+	      \end{flalign*}
+
+	\item
+	      \begin{flalign*}
+		       & \frac{ d }{ dx } \tan(\sqrt{x})                          & \\
+		       & \sec^2(\sqrt{x}) \frac{ 1 }{ 2 } x^{\frac{ 1 }{ 2 } - 1} & \\
+		       & \sec^2(\sqrt{x}) \frac{ 1 }{ 2 } x^{- \frac{ 1 }{ 2 }}   & \\
+		       & \frac{\sec^2(\sqrt{x})}{ 2 \sqrt{x}}                     & \\
+	      \end{flalign*}
+
+	\item
+	      \begin{flalign*}
+		       & y = \frac{ 2 }{ 4 } = \frac{ 1 }{ 2 }                                                                                              & \\
+		       & y' = f'(x + \Delta x) = \frac{ 2 }{ 4 + 0.2 } = \frac{ 2 }{ 4.2 } = \frac{ 1 }{ 2.1 }                                              & \\
+		       & \Delta y = \frac{ 1 }{ 2.1 } - \frac{ 1 }{ 2 } = \frac{ 10 }{ 21 } - \frac{ 1 }{ 2 } = \frac{ 20 - 21 }{ 42 } = - \frac{ 1 }{ 42 } & \\
+		       & dy = f'(x) dx                                                                                                                      & \\
+		       & dy = \frac{ -2 }{ x^2 } \times  0.2                                                                                                & \\
+		       & dy = \frac{ -2 }{ 4^2 } \times  0.2 = - \frac{ 0.4 }{ 16 } = - \frac{ 0.1 }{ 4 } = - \frac{ 1 }{ 40 }                              & \\
+	      \end{flalign*}
+
+	\item
+	      \begin{flalign*}
+		       & r_1 = 12 + 0.06 = 12.06                                                                                   & \\
+		       & r_2 = 12 - 0.06 = 11.94                                                                                   & \\
+		       &                                                                                                           & \\
+		       & V(r_1) = \frac{ 4 }{ 3 } \pi \times 12.06^3                                                               & \\
+		       & V(r_2) = \frac{ 4 }{ 3 } \pi \times 11.94^3                                                               & \\
+		       &                                                                                                           & \\
+		       & V(r_1) - V(r_2) = \frac{ 4 }{ 3 } \pi (12.06^3 - 11.94^3)                                                 & \\
+		       & V(r_1) - V(r_2) = \frac{ 4 }{ 3 } \pi (12.06 - 11.94)(12.06^2 + 12.06 \times 11.94 + 11.94^2)             & \\
+		       & V(r_1) - V(r_2) = \frac{ 4 }{ 3 } \pi \times 0.12((12 + 0.06)^2 + 12.06 \times 11.94 + (12 - 0.06)^2)     & \\
+		       & V(r_1) - V(r_2) = \frac{ 4 }{ 3 } \pi \times 0.12((12 + 0.06)^2 + (12 + 0.06)(12 - 0.06) + (12 - 0.06)^2) & \\
+		       & V(r_1) - V(r_2) = \frac{ 4 }{ 3 } \pi \times 0.12((12 + 0.06)^2 + 12^2 - 0.06^2 + (12 - 0.06)^2)          & \\
+	      \end{flalign*}
+
+	\item
+	      \begin{flalign*}
+		       & \frac{ d }{ dx } 2 e^{x^2 - 4x} & \\
+		       & 2 \frac{ d }{ dx } e^{x^2 - 4x} & \\
+		       & 2 e^{x^2 - 4x}(2x - 4)          & \\
+		       & e^{x^2 - 4x}(4x - 8)            & \\
+		       & e^{x^2 - 4x}(4x - 8) = 0        & \\
+		       & 4x - 8 = 0 \implies x = 2       & \\
+	      \end{flalign*}
+
+	\item
+	\item
+	\item
+	\item
+	\item
+	\item
+	\item
+	\item
+	\item
+	\item
+	\item \begin{flalign*}
+		       & y = 20 \cosh \left( \frac{ 0 }{ 20 } \right) - 15 = 20 \cosh (0) - 15 = 5                                     & \\
+		       & \frac{ d }{ dx } \cosh\left( \frac{ x }{ 20 } \right) = senh \left( \frac{ x }{ 20 } \right) \frac{ 1 }{ 20 } & \\
+		       & \frac{ senh \left( \frac{ 7 }{ 20 } \right) }{ 20 } \approx \frac{ .36 }{ 20 } = .018                         & \\
+	      \end{flalign*}
+
+\end{enumerate}
+\end{document}

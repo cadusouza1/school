@@ -1,0 +1,134 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\begin{document}
+\begin{enumerate}
+	\item
+	      \begin{flalign*}
+		       & A = \begin{bmatrix}
+			             cos(\theta) & - sin(\theta) \\
+			             sin(\theta) & cos(\theta)   \\
+		             \end{bmatrix} & \\
+		       & B = \begin{bmatrix}
+			             cos(\omega) & - sin(\omega) \\
+			             sin(\omega) & cos(\omega)   \\
+		             \end{bmatrix} & \\
+	      \end{flalign*}
+
+	      \begin{enumerate}
+		      \item
+		            \begin{flalign*}
+			             & AB = \begin{bmatrix}
+				                    cos(\theta) & - sin(\theta) \\
+				                    sin(\theta) & cos(\theta)   \\
+			                    \end{bmatrix} \begin{bmatrix}
+				                                  cos(\omega) & - sin(\omega) \\
+				                                  sin(\omega) & cos(\omega)   \\
+			                                  \end{bmatrix}                                                                             & \\
+			             & AB = \begin{bmatrix}
+				                    cos(\theta) cos(\omega) - sin(\theta) sin(\omega) & -cos(\theta) sin(\omega) - sin(\theta) cos(\omega)  \\
+				                    sin(\theta) cos(\omega) + cos(\theta) sin(\omega) & - sin(\theta) sin(\theta) + cos(\theta) cos(\omega) \\
+			                    \end{bmatrix} &   \\
+			             & AB = \begin{bmatrix}
+				                    cos(\theta + \omega) & - sin(\theta + \omega) \\
+				                    sin(\theta + \omega) & cos(\theta + \omega)   \\
+			                    \end{bmatrix}                                                           &                                 \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & AB = \begin{bmatrix}
+				                    cos(\theta) cos(\omega) - sin(\theta) sin(\omega) & -cos(\theta) sin(\omega) - sin(\theta) cos(\omega)  \\
+				                    sin(\theta) cos(\omega) + cos(\theta) sin(\omega) & - sin(\theta) sin(\theta) + cos(\theta) cos(\omega) \\
+			                    \end{bmatrix} &   \\
+			             & BA = \begin{bmatrix}
+				                    cos(\omega) & - sin(\omega) \\
+				                    sin(\omega) & cos(\omega)   \\
+			                    \end{bmatrix} \begin{bmatrix}
+				                                  cos(\theta) & - sin(\theta) \\
+				                                  sin(\theta) & cos(\theta)   \\
+			                                  \end{bmatrix}                                                                             & \\
+			             & BA = \begin{bmatrix}
+				                    cos(\omega) cos(\theta) - sin(\omega) sin(\theta) & -cos(\omega) sin(\theta) - sin(\omega) cos(\theta)  \\
+				                    sin(\omega) cos(\theta) + cos(\omega) sin(\theta) & - sin(\omega) sin(\theta) + cos(\omega) cos(\theta) \\
+			                    \end{bmatrix} &   \\
+			             & BA = \begin{bmatrix}
+				                    cos(\omega + \theta) & - sin(\omega + \theta) \\
+				                    sin(\omega + \theta) & cos(\omega + \theta)   \\
+			                    \end{bmatrix} = \begin{bmatrix}
+				                                    cos(\theta + \omega) & - sin(\theta + \omega) \\
+				                                    sin(\theta + \omega) & cos(\theta + \omega)   \\
+			                                    \end{bmatrix} = AB                                                           &            \\
+		            \end{flalign*}
+		      \item Sim. Pois uma matriz de rotação é inversível e seu valor é
+		            igual a da sua transposta
+		            \begin{flalign*}
+			             & A^{-1} = A^T = \begin{bmatrix}
+				                              cos(\theta)   & sin(\theta) \\
+				                              - sin(\theta) & cos(\theta) \\
+			                              \end{bmatrix} & \\
+		            \end{flalign*}
+	      \end{enumerate}
+
+	\item
+	\item
+	\item \begin{flalign*}
+		       & A = \begin{bmatrix}
+			             a & b \\
+			             c & d \\
+		             \end{bmatrix} & \\
+		       & B = \begin{bmatrix}
+			             x & y \\
+			             w & z \\
+		             \end{bmatrix} & \\
+	      \end{flalign*}
+
+	      \begin{enumerate}
+		      \item \begin{flalign*}
+			             & det(A^T) = det(A)                                 &                \\
+			             & det\left( \begin{bmatrix}
+				                         a & c \\
+				                         b & d \\
+			                         \end{bmatrix} \right) = det\left( \begin{bmatrix}
+				                                                           a & b \\
+				                                                           c & d \\
+			                                                           \end{bmatrix}\right) & \\
+			             & ad - bc = ad - bc \iff det(A^T) = det(A)          &                \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & det(AB) = det(A) det(B)                                         &                 \\
+			             & det\left( \begin{bmatrix}
+				                         a & b \\
+				                         c & d \\
+			                         \end{bmatrix} \begin{bmatrix}
+				                                       x & y \\
+				                                       w & z \\
+			                                       \end{bmatrix} \right)                                   & \\
+			             & det\left( \begin{bmatrix}
+				                         ax + bw & ay + bz \\
+				                         cx + dw & cy + dz \\
+			                         \end{bmatrix} \right)                                       &           \\
+			             & det(AB) = (ax + bw)(cy + dz) - (ay + bz)(cx + dw)               &                 \\
+			             & det(AB) = axcy + bwcy - aycx - bzcx + axdz + bwdz - aydw - bzdw &                 \\
+			             & det(AB) = bwcy - bzcx + axdz - aydw                             &                 \\
+			             & det(A) = ad - bc                                                &                 \\
+			             & det(B) = xz - yw                                                &                 \\
+			             & det(A) det(B) = (ad - bc)(xz - yw)                              &                 \\
+			             & det(A) det(B) = adxz - adyw - bcxz + bcyw = det(AB)             &                 \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & det(\lambda A) = \lambda^2 det(A)                                    &       \\
+			             & det\left( \begin{bmatrix}
+				                         \lambda a & \lambda b \\
+				                         \lambda c & \lambda d \\
+			                         \end{bmatrix} \right)                                            & \\
+			             & \lambda^2 ad - \lambda^2 bc = \lambda^2 (ad - bc) = \lambda^2 det(A) &       \\
+		            \end{flalign*}
+
+
+	      \end{enumerate}
+
+\end{enumerate}
+\end{document}

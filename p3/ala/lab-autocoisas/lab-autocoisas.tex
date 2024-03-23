@@ -1,0 +1,190 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\begin{document}
+\begin{enumerate}
+	\item
+	\item \begin{flalign*}
+		       & det\left(\begin{bmatrix}
+				                  0 & 1 \\
+				                  1 & 0 \\
+			                  \end{bmatrix} - \lambda I \right) = 0 & \\
+		       & det\left(\begin{bmatrix}
+				                  -\lambda & 1        \\
+				                  1        & -\lambda \\
+			                  \end{bmatrix} \right) = 0             & \\
+		       & \lambda^2 - 1 = 0                     &          \\
+		       & (\lambda_1, \lambda_2) = (1, -1)      &          \\
+		       &                                       &          \\
+		       & \text{Para } \lambda_1 = 1            &          \\
+		       & \left(\begin{bmatrix}
+				               0 & 1 \\
+				               1 & 0 \\
+			               \end{bmatrix} - 1I \right) x_1 = 0    &    \\
+		       & \left(\begin{bmatrix}
+				               -1 & 1  \\
+				               1  & -1 \\
+			               \end{bmatrix} \right) x_1 = 0         &    \\
+		       & \begin{bmatrix}
+			         -1 & 1  \\
+			         1  & -1 \\
+		         \end{bmatrix} \begin{bmatrix}
+			                       a \\
+			                       b
+		                       \end{bmatrix} = 0         &        \\
+		       & \begin{bmatrix}
+			         -a + b \\
+			         a - b  \\
+		         \end{bmatrix} = 0                     &          \\
+		       & \begin{cases}
+			         -a + b = 0 \implies a = b \\
+			         a - b = 0  \implies a = b \\
+		         \end{cases}          &                        \\
+		       & x_1 = k \begin{bmatrix}
+			                 1 \\
+			                 1 \\
+		                 \end{bmatrix}               &            \\
+		       &                                       &          \\
+		       & \text{Para } \lambda_2 = -1           &          \\
+		       & \left(\begin{bmatrix}
+				               0 & 1 \\
+				               1 & 0 \\
+			               \end{bmatrix} + 1I \right) x_2 = 0    &    \\
+		       & \left(\begin{bmatrix}
+				               1 & 1 \\
+				               1 & 1 \\
+			               \end{bmatrix} \right) x_2 = 0         &    \\
+		       & \begin{bmatrix}
+			         1 & 1 \\
+			         1 & 1 \\
+		         \end{bmatrix} \begin{bmatrix}
+			                       c \\
+			                       d \\
+		                       \end{bmatrix} = 0         &        \\
+		       & \begin{bmatrix}
+			         c + d \\
+			         c + d \\
+		         \end{bmatrix} = 0                     &          \\
+		       & \begin{cases}
+			         c + d = 0 \implies c = -d \\
+			         c + d = 0 \implies c = -d \\
+		         \end{cases}          &                        \\
+		       & x_2 = k \begin{bmatrix}
+			                 -1 \\
+			                 1  \\
+		                 \end{bmatrix}               &            \\
+	      \end{flalign*}
+
+	\item \begin{flalign*}
+		       & det\left( \begin{bmatrix}
+				                   -1 & 0 \\
+				                   0  & 1 \\
+			                   \end{bmatrix} - \lambda I \right) = 0 & \\
+		       & det\left( \begin{bmatrix}
+				                   -1 - \lambda & 0           \\
+				                   0            & 1 - \lambda \\
+			                   \end{bmatrix} \right) = 0         &     \\
+		       & (-1 - \lambda)(1 - \lambda) = 0       &           \\
+		       & (\lambda_1, \lambda_2) = (1, -1)      &           \\
+		       &                                       &           \\
+		       & \text{Para } \lambda_1 = 1            &           \\
+		       & \begin{bmatrix}
+			         -1 - 1 & 0     \\
+			         0      & 1 - 1 \\
+		         \end{bmatrix} \begin{bmatrix}
+			                       a \\ b
+		                       \end{bmatrix} = 0         &         \\
+		       & \begin{bmatrix}
+			         -2 & 0 \\
+			         0  & 0 \\
+		         \end{bmatrix} \begin{bmatrix}
+			                       a \\ b
+		                       \end{bmatrix} = 0         &         \\
+		       & \begin{bmatrix}
+			         -2a + 0b \\ 0
+		         \end{bmatrix} = 0                     &           \\
+		       & \begin{bmatrix}
+			         a \\ b
+		         \end{bmatrix} = \begin{bmatrix}
+			                         0 \\ k
+		                         \end{bmatrix}       &             \\
+		       &                                       &           \\
+		       & \text{Para } \lambda_2 = -1           &           \\
+		       & \begin{bmatrix}
+			         -1 + 1 & 0     \\
+			         0      & 1 + 1 \\
+		         \end{bmatrix} \begin{bmatrix}
+			                       a \\ b
+		                       \end{bmatrix} = 0         &         \\
+		       & \begin{bmatrix}
+			         0 & 0 \\
+			         0 & 2 \\
+		         \end{bmatrix} \begin{bmatrix}
+			                       a \\ b
+		                       \end{bmatrix} = 0         &         \\
+		       & \begin{bmatrix}
+			         0 \\ 2b
+		         \end{bmatrix} = 0                     &           \\
+		       & \begin{bmatrix}
+			         a \\ b
+		         \end{bmatrix} = \begin{bmatrix}
+			                         k \\ 0
+		                         \end{bmatrix}       &             \\
+	      \end{flalign*}
+
+	\item \begin{flalign*}
+		       & det\left( \begin{bmatrix}
+				                   -2 & 2 \\
+				                   0  & 2 \\
+			                   \end{bmatrix} - \lambda I \right) = 0 & \\
+		       & det\left( \begin{bmatrix}
+				                   -2 - \lambda & 2           \\
+				                   0            & 2 - \lambda \\
+			                   \end{bmatrix} \right) = 0         &     \\
+		       & (\lambda_1, \lambda_2) = (2, -2)      &           \\
+		       &                                       &           \\
+		       & \text{Para } \lambda_1 = 2            &           \\
+		       & \begin{bmatrix}
+			         -2 - 2 & 2     \\
+			         0      & 2 - 2 \\
+		         \end{bmatrix} \begin{bmatrix}
+			                       a \\ b
+		                       \end{bmatrix} = 0         &         \\
+		       & \begin{bmatrix}
+			         -4 & 2 \\
+			         0  & 0 \\
+		         \end{bmatrix} \begin{bmatrix}
+			                       a \\ b
+		                       \end{bmatrix} = 0         &         \\
+		       & -4a + 2b = 0 \implies 2a = b          &           \\
+		       & k \begin{bmatrix}
+			           1 \\ 2
+		           \end{bmatrix}                     &             \\
+		       &                                       &           \\
+		       & \text{Para } \lambda_2 = -2           &           \\
+		       & \begin{bmatrix}
+			         -2 + 2 & 2     \\
+			         0      & 2 + 2 \\
+		         \end{bmatrix} \begin{bmatrix}
+			                       a \\ b
+		                       \end{bmatrix} = 0         &         \\
+		       & \begin{bmatrix}
+			         0 & 2 \\
+			         0 & 4 \\
+		         \end{bmatrix} \begin{bmatrix}
+			                       a \\ b
+		                       \end{bmatrix} = 0         &         \\
+		       & \begin{bmatrix}
+			         2a \\ 4b
+		         \end{bmatrix} = 0                     &           \\
+		       & a = b = 0                             &           \\
+	      \end{flalign*}
+
+	\item \begin{flalign*}
+		       & det(AA^{-1}) = 0 & \\
+		       & det(I) = 0       & \\
+	      \end{flalign*}
+
+\end{enumerate}
+\end{document}

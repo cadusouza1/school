@@ -1,0 +1,35 @@
+- Título: Projeto Informação: Letramento de dados 
+- Autores: Isaac D'Césares, Charles Soares Pimentel
+- Sessão em que foi apresentada (dia, horário, local): 30/05/2023 15:45 CCMN
+- Curso e período dos autores: Não informado
+- Coordenador da sessão: 
+- Banca avaliadora: Carla Moreira Delgado, Valeria Bastos, Marcia Cerioli
+- Problema que o trabalho visa resolver: Falta de autonomia tecnológica
+- Solução ou estudo desenvolvido: Promover oficinas de discussão, práticas de análise de dados, leitura e interpretação de fatos de notícias.
+- Principais resultados: Não mencionado
+- Cite um trabalho correlato mencionado na apresentação: Não mencionado
+- Cite um trabalho futuro mencionado na apresentação: Não mencionado
+
+- Título: Inteligência Artificial como ferramenta de criação pictórica
+- Autores: Bruno Ferreira França
+- Sessão em que foi apresentada (dia, horário, local): 31/05/2023 09:00 INOVATECA
+- Curso e período dos autores: Não informado
+- Coordenador da sessão: Priscila Vieira Magalhães Souza
+- Banca avaliadora: Isalira Ramos, Daniel Aguiar
+- Problema que o trabalho visa resolver: Problemas Éticos gerados pelos avanços da Inteligência Artificial
+- Solução ou estudo desenvolvido: Utilização de ferramentas para identificar e separar criações de IA de criações humanas
+- Principais resultados: Uso ético da Inteligência Artificial, controle e identificação de direitos autorais, auxílio na produção de artes e mídias digitais de forma autoral.
+- Cite um trabalho correlato mencionado na apresentação: Criação de um trabalho autoral em mídia digital
+- Cite um trabalho futuro mencionado na apresentação: Não informado
+
+- Título: Análise de Dados do Laboratório de Inovação Cidadã
+- Autores: Saulo Roberto do Carmo Junger
+- Sessão em que foi apresentada (dia, horário, local): 31/05/2023 9:50 INOVATECA
+- Curso e período dos autores: Bacharelado em Ciência da Computação. Sexto período
+- Coordenador da sessão: Priscila Vieira Magalhães Souza
+- Banca avaliadora: Isalira Ramos, Daniel Aguiar
+- Problema que o trabalho visa resolver: Baixos níveis de uso de dados e pouco uso de dados demográficos
+- Solução ou estudo desenvolvido: Obtenção de apoio às analises para tomada de decisão e visão temporal dos dados
+- Principais resultados: Levantamento de dados demográficos dos LABICs 2021 e 2022
+- Cite um trabalho correlato mencionado na apresentação: Criação de um portal para facilitação do mapeamento de projetos e dados dos LABICs
+- Cite um trabalho futuro mencionado na apresentação: Desenvolvimento de um painel de informações. Cruzamento com dados de plataformas da internet.

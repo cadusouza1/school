@@ -1,0 +1,147 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\begin{document}
+\begin{flalign*}
+	 & \int \sin(ax^2 + bx + c) dx                                         & \\
+	 & \int \sin((ax^2) + (bx + c)) dx                                     & \\
+	 & \int \sin(ax^2) \cos(bx + c) + \cos(ax^2) \sin(bx + c) dx           & \\
+	 & \int \sin(ax^2) \cos(bx + c) + \int \cos(ax^2) \sin(bx + c) dx      & \\
+	 & \cos(bx + c) = \cos(bx) \cos(c) - \sin(bx) \sin(c)                  & \\
+	 & \sin(bx + c) = \sin(bx) \cos(c) + \cos(bx) \sin(c)                  & \\
+	 &                                                                     & \\
+	 & \int \sin(ax^2) \cos(bx + c)                                        & \\
+	 & \int \sin(ax^2) (\cos(bx) \cos(c) - \sin(bx) \sin(c))               & \\
+	 & \int \sin(ax^2) \cos(bx) \cos(c) - \sin(ax^2) \sin(bx) \sin(c)      & \\
+	 & \int \sin(ax^2) \cos(bx) \cos(c) - \int \sin(ax^2) \sin(bx) \sin(c) & \\
+	 &                                                                     & \\
+	 & \int \cos(ax^2) \sin(bx + c)                                        & \\
+	 & \int \cos(ax^2) (\sin(bx)\cos(c) + \cos(bx)\sin(c))                 & \\
+	 & \int \cos(ax^2)\sin(bx)\cos(c) + \cos(ax^2) \cos(bx)\sin(c)         & \\
+	 & \int \cos(ax^2)\sin(bx)\cos(c) + \int \cos(ax^2) \cos(bx)\sin(c)    & \\
+	 & \int \sin(ax^2) \cos(bx) \cos(c) - \int \sin(ax^2) \sin(bx) \sin(c) & \\
+	 &                                                                     & \\
+	 & I_1 = \int \cos(ax^2)\sin(bx)\cos(c) dx                             & \\
+	 & I_2 = \int \cos(ax^2) \cos(bx)\sin(c) dx                            & \\
+	 & I_3 = \int \sin(ax^2) \cos(bx) \cos(c) dx                           & \\
+	 & I_4 = \int \sin(ax^2) \sin(bx) \sin(c) dx                           & \\
+	 & I_1 = \cos(c) \int \cos(ax^2)\sin(bx) dx                            & \\
+	 & I_2 = \sin(c) \int \cos(ax^2) \cos(bx) dx                           & \\
+	 & I_3 = \cos(c) \int \sin(ax^2) \cos(bx)  dx                          & \\
+	 & I_4 = \sin(c) \int \sin(ax^2) \sin(bx)  dx                          & \\
+	 & \int \sin(ax^2 + bx + c) dx = I_1 + I_2 + I_3 - I_4                 & \\
+\end{flalign*}
+
+\section{$\int I_1$} % (fold)
+
+\begin{flalign*}
+	% & I_1 = \int \cos(ax^2)\sin(bx)\cos(c) dx                                                                    & \\
+	% & I_1 = \cos(c) \int \cos(ax^2)\sin(bx) dx                                                                   & \\
+	% & \cos(ax^2) \sin(bx) = \frac{ \sin(ax^2 + bx) }{ 2 } + \frac{ \sin(ax^2 - bx) }{ 2 }                        & \\
+	% & I_1 = \cos(c) \int \frac{ \sin(ax^2 + bx) }{ 2 } + \frac{ \sin(ax^2 - bx) }{ 2 } dx                        & \\
+	% & I_1 = \cos(c) \left( \int \frac{ \sin(ax^2 + bx) }{ 2 } dx + \int \frac{ \sin(ax^2 - bx) }{ 2 } \right) dx & \\
+	% & V_1 = \int \frac{ \sin(ax^2 + bx) }{ 2 } dx                                                                & \\
+	% & V_2 = \int \frac{ \sin(ax^2 - bx) }{ 2 } dx                                                                & \\
+	 & I_1 = \cos(c) \int \cos(ax^2) \sin(bx) dx                                                                                                   & \\
+	 & u = bx                                                                                                                                      & \\
+	 & du = b dx                                                                                                                                   & \\
+	 & \frac{ 1 }{ b } du = dx                                                                                                                     & \\
+	 & \frac{ 1 }{ b } u = x                                                                                                                       & \\
+	 & I_1 = \cos(c) \frac{ 1 }{ b } \int \cos\left(\frac{ a }{ b^2 } u^2\right) \sin(u) du                                                        & \\
+	 & w = \cos\left(\frac{ a }{ b^2 } u^2\right)                                                                                                  & \\
+	 & dw = -\sin\left( \frac{ a }{ b^2 } u^2 \right) \left( \frac{ 2a }{ b^2 } u \right) du                                                       & \\
+	 & dv = \sin(u) du                                                                                                                             & \\
+	 & v = -\cos(u)                                                                                                                                & \\
+	 & -\cos(u) \cos\left( \frac{ a }{ b^2 } u\right) - \int \cos(u) \sin\left( \frac{ a }{ b^2 } u \right) \left( \frac{ 2a }{ b^2 } u \right) du & \\
+	 & -\cos(u) \cos\left( \frac{ a }{ b^2 } u\right) - \frac{ 2a }{ b^2 }  \int \cos(u) \sin\left( \frac{ a }{ b^2 } u^2 \right) u du             & \\
+	 & k = \frac{ a }{ b^2 } u^2                                                                                                                   & \\
+	 & dk = \frac{ 2a }{ b^2 } u du                                                                                                                & \\
+	 & \frac{ b^2 }{ 2a } dk = u du                                                                                                                & \\
+	 & \sqrt{\frac{ b^2 }{ 2a } k } = u                                                                                                            & \\
+\end{flalign*}
+
+\subsection{$\int V_1$}
+
+\begin{flalign*}
+	 & V_1 = \int \frac{ \sin(ax^2 + bx) }{ 2 } dx                                             & \\
+	 & V_1 = \frac{ 1 }{ 2 } \int \sin(ax^2 + bx) dx                                           & \\
+	 & \sin(ax^2 + bx) = \sin(ax^2) \cos(bx) + \cos(ax^2) \sin(bx)                             & \\
+	 & V_1 = \frac{ 1 }{ 2 } \int \sin(ax^2) \cos(bx) + \cos(ax^2) \sin(bx) dx                 & \\
+	 & V_1 = \frac{ 1 }{ 2 } \int \sin(ax^2) \cos(bx) dx + \int \cos(ax^2) \sin(bx) dx         & \\
+	 & V_1 = \frac{ 1 }{ 2 } \left( \frac{ I_3 }{ \cos(c) } + \frac{ I_1 }{ \cos(c) }  \right) & \\
+	 & V_1 = \frac{ I_3 + I_1 }{ 2 \cos(c) }                                                   & \\
+\end{flalign*}
+
+\subsection{$\int V_2$}
+
+\begin{flalign*}
+	 & V_2 = \int \frac{ \sin(ax^2 - bx) }{ 2 } dx                                                   & \\
+	 & V_2 = \frac{ 1 }{ 2 } \int \sin(ax^2 - bx) dx                                                 & \\
+	 & \sin(ax^2 - bx) = \sin(ax^2) \cos(bx) - \cos(ax^2) \sin(bx)                                   & \\
+	 & V_2 = \frac{ 1 }{ 2 } \int \sin(ax^2) \cos(bx) - \cos(ax^2) \sin(bx) dx                       & \\
+	 & V_2 = \frac{ 1 }{ 2 } \left(\int \sin(ax^2) \cos(bx) dx - \int \cos(ax^2) \sin(bx) dx \right) & \\
+	 & V_2 = \frac{ 1 }{ 2 } \left( \frac{ I_3 }{ \cos(c) } - \frac{ I_1 }{ \cos(c) } \right)        & \\
+	 & V_2 = \frac{ I_3 - I_1 }{ 2 \cos(c) }                                                         & \\
+\end{flalign*}
+
+\begin{flalign*}
+	 & I_1 = \cos(c) (V_1 + V_2)                                                                      & \\
+	 & I_1 = \cos(c) \left( \frac{ I_3 + I_1 }{ 2 \cos(c) } + \frac{ I_3 - I_1 }{ 2 \cos(c) } \right) & \\
+	 & I_1 = I_3                                                                                      & \\
+\end{flalign*}
+
+% section $\int I_1$ (end)
+
+\section{$\int I_2$} % (fold)
+
+\begin{flalign*}
+	 & I_2 = \sin(c) \int \cos(ax^2) \cos(bx) dx                                           & \\
+	 & \cos(ax^2) \cos(bx) = \frac{ \cos(ax^2 + bx) }{ 2 } + \frac{ \cos(ax^2 - bx) }{ 2 } & \\
+	 & I_2 = \sin(c) \int \frac{ \cos(ax^2 + bx) }{ 2 } + \frac{ \cos(ax^2 - bx) }{ 2 }dx  & \\
+	 & V_1 = \int \frac{ \cos(ax^2 + bx) }{ 2 } dx                                         & \\
+	 & V_2 = \int \frac{ \cos(ax^2 - bx) }{ 2 } dx                                         & \\
+\end{flalign*}
+
+\subsection{$\int V_1$} % (fold)
+
+\begin{flalign*}
+	 & V_1 = \int \frac{ \cos(ax^2 + bx) }{ 2 } dx                                                   & \\
+	 & V_1 = \frac{ 1 }{ 2 } \int \cos(ax^2 + bx) dx                                                 & \\
+	 & \cos(ax^2 + bx) = \cos(ax^2) \cos(bx) - \sin(ax^2) \sin(bx)                                   & \\
+	 & V_1 = \frac{ 1 }{ 2 } \int \cos(ax^2) \cos(bx) - \sin(ax^2) \sin(bx) dx                       & \\
+	 & V_1 = \frac{ 1 }{ 2 } \left(\int \cos(ax^2) \cos(bx) dx - \int \sin(ax^2) \sin(bx) dx \right) & \\
+	 & V_1 = \frac{ 1 }{ 2 } \left( \frac{ I_2 }{ \sin(c) } - \frac{ I_4 }{ \sin(c) } \right)        & \\
+	 & V_1 = \frac{ I_2 - I_4 }{ 2 \sin(c) }                                                         & \\
+\end{flalign*}
+
+% subsection $\int V_1$ (end)
+
+\subsection{$\int V_2$} % (fold)
+\begin{flalign*}
+	 & V_2 = \int \frac{ \cos(ax^2 - bx) }{ 2 } dx                             & \\
+	 & V_2 = \frac{ 1 }{ 2 } \int \cos(ax^2 - bx) dx                           & \\
+	 & \cos(ax^2 - bx) = \cos(ax^2)\cos(bx) + \sin(ax^2) \sin(bx)              & \\
+	 & V_2 = \frac{ 1 }{ 2 } \int \cos(ax^2) \cos(bx) + \sin(ax^2) \sin(bx) dx & \\
+	 &                                                                         & \\
+	% & V_2 = \frac{ 1 }{ 2 } \left( \frac{ I_2 }{ \sin(c) } + \frac{ I_4 }{ \sin(c) } \right) & \\
+	% & V_2 = \frac{ I_2 + I_4 }{ 2 \sin(c) }                                                  & \\
+\end{flalign*}
+
+
+% subsection $\int V_2$ (end)
+
+\begin{flalign*}
+	 & I_2 = \sin(c) (V_1 + V_2)                                                                      & \\
+	 & I_2 = \sin(c) \left( \frac{ I_2 - I_4 }{ 2 \sin(c) } + \frac{ I_2 + I_4 }{ 2 \sin(c) } \right) & \\
+\end{flalign*}
+
+% section $\int I_2$ (end)
+
+\section{$\int I_3$} % (fold)
+
+% section $\int I_3$ (end)
+
+\section{$\int I_4$} % (fold)
+
+% section $\int I_4$ (end)
+\end{document}

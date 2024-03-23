@@ -1,0 +1,14 @@
+Para calcular o valor de R1 e R2 será necessário fixar o valor de um dos resistores.
+
+Assumimos o valor de 330 ohms para o resistor R1 e seguimos com os cálculos do
+próximo resistor.
+
+Aplicando a fórmula de Divisor de Tensão temos que R2 = 412,5 ohms.
+
+Para calcular o valor de resistência do resistor fotovoltaico sem luz
+encostamos o resistor na roupa de um dos membros do grupo, desse modo pudemos
+isolar o resistor da luz. O valor de resistência medido foi de 
+
+Para calcular o valor de resistência do resistor fotovoltaico com a presença de
+luz aproximamos o resistor fotovoltaico da luz presente na bancada. O valor de
+resistência medido foi de 

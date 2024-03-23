@@ -1,0 +1,74 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\begin{document}
+\begin{enumerate}
+	\item Seja $Ux = \begin{bmatrix}
+			      1 & 2 & 3 & 4 \\
+			      0 & 0 & 1 & 2 \\
+			      0 & 0 & 0 & 0 \\
+		      \end{bmatrix} \begin{bmatrix}
+			      x_1 \\
+			      x_2 \\
+			      x_3 \\
+			      x_4 \\
+		      \end{bmatrix} = \begin{bmatrix}
+			      b_1 \\
+			      b_2 \\
+			      b_3 \\
+		      \end{bmatrix}$
+
+	      \begin{enumerate}
+		      \item Apresente todas as soluções se $b = \begin{bmatrix}
+				            0 & 0 & 0
+			            \end{bmatrix}^T $
+		      \item E se $b = \begin{bmatrix}
+				            b_1 & b_2 & 0
+			            \end{bmatrix}$ , com $b_1$ e $b_2 \ne 0$
+		      \item Se possível, apresente um $b$ para que não haja solução
+	      \end{enumerate}
+
+	\item Seja o sistema linear $\begin{bmatrix}
+			      2 & 5  & -1 \\
+			      4 & -1 & 2  \\
+			      6 & 4  & k
+		      \end{bmatrix} \begin{bmatrix}
+			      x_1 \\
+			      x_2 \\
+			      x_3 \\
+		      \end{bmatrix} = \begin{bmatrix}
+			      2     \\
+			      4 + s \\
+			      s
+		      \end{bmatrix}$
+
+	      \begin{enumerate}
+		      \item Apresente a decomposição $LU$ da matriz em função de $k$ e $s$
+		      \item Para que valores de $k$ e $s$ o sistema é determinado,
+		            indeterminado ou impossível
+	      \end{enumerate}
+	\item Diga se as afirmações abaixo são verdadeiras ou falsas
+	      \begin{enumerate}
+		      \item $AA^T = A^TA$, para $A$ uma matriz retangular $n \times m$
+		      \item $AA^T$ e $A^TA$, são simétricas, para $A$ uma matriz retangular $n \times m$
+		      \item $H = I - 2nn^T$, é uma matrix simétrica para $n$ unitário
+		      \item $H = I - 2nn^T$, é uma matrix ortogonal para $n$ unitário
+	      \end{enumerate}
+
+	\item Calcule a inversa da matriz resultante do seguinte produto de matrizes elementares
+	      $$ E_{32} E_{31} E_{21} = \begin{bmatrix}
+			      1 & 0 & 0 \\
+			      0 & 1 & 0 \\
+			      0 & 1 & 1 \\
+		      \end{bmatrix} \begin{bmatrix}
+			      1  & 0 & 0 \\
+			      0  & 1 & 0 \\
+			      -3 & 0 & 1 \\
+		      \end{bmatrix} \begin{bmatrix}
+			      1  & 0 & 0 \\
+			      -2 & 1 & 0 \\
+			      0  & 0 & 1 \\
+		      \end{bmatrix} $$
+\end{enumerate}
+\end{document}

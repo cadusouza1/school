@@ -1,0 +1,198 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\begin{document}
+\begin{enumerate}
+	\item \begin{enumerate}
+		      \item \begin{flalign*}
+			             & \int_{0}^{2} x^3 dx                     & \\
+			             & = \frac{ x^4 }{ 4 } \bigg\rvert_0^2     & \\
+			             & = \frac{ 2^4 }{ 4 } - \frac{ 0^4 }{ 4 } & \\
+			             & = 4                                     & \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & \int_{-1}^{1} (-1 - 2y - 3y^2) dy                                                                                                      & \\
+			             & = - \int_{-1}^{1} 1 dy - 2\int_{-1}^{1} y dy - 3 \int_{-1}^{1} y^2 dy                                                                  & \\
+			             & = -1 y \bigg\rvert_{-1}^1 - 2 \frac{ y^2 }{ 2 } \bigg\rvert_{-1}^1 - 3 \frac{ y^3 }{ 3 } \bigg\rvert_{-1}^1                            & \\
+			             & = - [1 - (-1)] - 2 \left( \frac{ 1^2 }{ 2 } - \frac{ (-1)^2 }{ 2 } \right) - 3 \left( \frac{ 1^3 }{ 3 } - \frac{ (-1)^3 }{ 3 } \right) & \\
+			             & = -2 - 0 + 2 = 0                                                                                                                       & \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & \int_{0}^{49} \sqrt{t} dt                                                    & \\
+			             & = \int_{0}^{49} t^{\frac{ 1 }{ 2 }} dt                                       & \\
+			             & = \frac{ t^{\frac{ 1 }{ 2 } + 1} }{ \frac{ 1 }{ 2 } + 1 } \bigg\rvert_0^{49} & \\
+			             & = \frac{ t^{\frac{ 3 }{ 2 } } }{ \frac{ 3 }{ 2 } } \bigg\rvert_0^{49}        & \\
+			             & = \frac{ 2 }{ 3 } t^{\frac{ 3 }{ 2 } } \bigg\rvert_0^{49}                    & \\
+			             & = \frac{ 2 }{ 3 } \left( 49^{\frac{ 3 }{ 2 }} - 1 \right)                    & \\
+			             & = \frac{ 2 }{ 3 } \left( 7^3 - 1 \right)                                     & \\
+			             & = \frac{ 2 \times 342 }{ 3 }                                                 & \\
+			             & = \frac{ 686 }{ 3 }                                                          & \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & \int_{1}^{3} \frac{ 2 }{ x^3 } dx                           & \\
+			             & = 2 \int_{1}^{3} x^{-3} dx                                  & \\
+			             & = 2 \frac{ x^{-2} }{ -2 } \bigg\rvert_1^3                   & \\
+			             & = 2 \left( \frac{ 3^{-2} }{ -2 } - \frac{ 1 }{ -2 } \right) & \\
+			             & = - \frac{ 1 }{ 9 } + 1                                     & \\
+			             & = \frac{ 8 }{ 9 }                                           & \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & \int_{0}^{\frac{ \pi }{ 4 }} \sec^2(\theta) d\theta & \\
+			             & = \tan(\theta) \bigg\rvert_0^{\frac{ \pi }{ 4 } }   & \\
+			             & = \tan \left( \frac{ \pi }{ 4 } \right) - \tan(0)   & \\
+			             & = 1 - 0 = 1                                         & \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & \int_{0}^{1} 2^x dx                                          & \\
+			             & = \frac{ 2^x }{ \ln(2) } \bigg\rvert_0^1                     & \\
+			             & = \left( \frac{ 2 }{ \ln(2) } - \frac{ 1 }{ \ln(2) } \right) & \\
+			             & = \frac{ 1 }{ \ln(2) }                                       & \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & \int \left( z^2 + 1 + \frac{ 1 }{ z^2 + 1 } \right) dz    & \\
+			             & = \int z^2 dz + \int 1 dz + \int \frac{ 1 }{ z^2 + 1 } dz & \\
+			             & = \frac{ z^3 }{ 3 } + z + \arctan(z) + C                  & \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & \int (1 + \tan^2(s)) ds & \\
+			             & = \int \sec^2(s) ds     & \\
+			             & = \tan(s) + C           & \\
+		            \end{flalign*}
+
+	      \end{enumerate}
+
+	\item \begin{enumerate}
+		      \item \begin{flalign*}
+			             & g(x) = \int_{1}^{x} ln(t) dt & \\
+			             & g'(x) =  f(u(x)) u'(x)       & \\
+			             & g'(x) = ln(x)                & \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & F(x) = \int_{x}^{7} \sin(u^7) du   & \\
+			             & F(x) = - \int_{7}^{x} \sin(u^7) du & \\
+			             & F'(x) = \sin(x^7) 7 x^6            & \\
+			             & F'(x) = 7x^6 \sin(x^7)             & \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & h(t) = \int_{\cos(t)}^{1} \cos(x) dx   & \\
+			             & h(t) = - \int_{1}^{\cos(t)} \cos(x) dx & \\
+			             & h'(t) = - \cos(\cos(t)) (- \sin(x))    & \\
+			             & h'(t) = \cos(\cos(t)) \sin(x)          & \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & S(x) = \int_{0}^{x} \sin \left(\frac{ \pi t^2 }{ 2 } \right) dt & \\
+			             & u = \frac{ \pi t^2 }{ 2 }                                       & \\
+			             & du = \frac{ \pi }{ 2 } \frac{ t^3 }{ 3 } dx                     & \\
+			             & du = \frac{ \pi t^2 }{ 2 } \frac{ t }{ 3 } dx                   & \\
+			             & du = \frac{ ut }{ 3 } dt                                        & \\
+			             & dt = \frac{ du }{ ut }                                          & \\
+			             & S(x) = \int_{0}^{x} \frac{ \sin(u) }{ ut } du                   & \\
+			             & S(x) = \frac{ 1 }{ t } \int_{0}^{x} \frac{ \sin(u) }{ u } du    & \\
+		            \end{flalign*}
+
+	      \end{enumerate}
+
+	\item
+	\item
+	\item \begin{enumerate}
+		      \item \begin{flalign*}
+			             & \int x \sin(x^2) dx                                          & \\
+			             & u = x^2 \implies du = 2x dx \implies \frac{ du }{ 2 } = x dx & \\
+			             & \frac{ 1 }{ 2 } \int \sin(u) du                              & \\
+			             & \frac{ 1 }{ 2 } \cos(u) + C                                  & \\
+			             & - \frac{ 1 }{ 2 } \cos(x^2) + C                              & \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & \int u^2 e^{u^3} du         & \\
+			             & x = u^3                     & \\
+			             & dx = 3u^2 du                & \\
+			             & \frac{ dx }{ 3 } = u^2 du   & \\
+			             & \frac{ 1 }{ 3 } \int e^x dx & \\
+			             & \frac{ 1 }{ 3 } e^x + C     & \\
+			             & \frac{ 1 }{ 3 } e^{u^3} + C & \\
+		            \end{flalign*}
+
+	      \end{enumerate}
+
+	\item \begin{flalign*}
+		       & \int_{0}^{1} \left( 3x^2 - g'(x) \right) dx          & \\
+		       & = x^3 \bigg\rvert_{0}^{1} - \int_{0}^{1} g'(x) dx    & \\
+		       & = x^3 \bigg\rvert_{0}^{1} - g(x) \bigg\rvert_{0}^{1} & \\
+		       & = 1 - (3 - 1) = 1 - 2 = -1                           & \\
+	      \end{flalign*}
+
+	\item \begin{flalign*}
+		       & \int_{1}^{8} f(x) dx = 6                                   & \\
+		       & \int_{1}^{2} x^2 f(x^3) dx                                 & \\
+		       & u = x^3                                                    & \\
+		       & du = 3x^2 dx                                               & \\
+		       & \frac{ 1 }{ 3 } du = x^2 dx                                & \\
+		       & (1, 2) \implies (1, 8)                                     & \\
+		       & \frac{ 1 }{ 3 } \int_{1}^{8} f(u) du = \frac{ 6 }{ 3 } = 2 & \\
+	      \end{flalign*}
+
+	\item \begin{enumerate}
+		      \item \begin{flalign*}
+			             & \int \cos^3(x) dx                           & \\
+			             & \int \left( 1 - \sin^2(x) \right)\cos(x) dx & \\
+			             & u = \sin(x)                                 & \\
+			             & du = \cos(x) dx                             & \\
+			             & \int (1 - u^2) du                           & \\
+			             & u - \frac{ u^3 }{ 3 } + C                   & \\
+			             & \sin(x) - \frac{ \sin^3(x) }{ 3 } + C       & \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & \int \tan^4(x) dx                               & \\
+			             & \int \frac{ \sin^4(x) }{ \cos^4(x) } dx         & \\
+			             & \int \frac{ (1 - \cos^2(x))^2 }{ \cos^4(x) } dx & \\
+		            \end{flalign*}
+
+	      \end{enumerate}
+
+	\item \begin{enumerate}
+		      \item \begin{flalign*}
+			             & y^2 = 2x + 4                                                      & \\
+			             & y = x + 2                                                         & \\
+			             & (x + 2)^2 = 2x + 4                                                & \\
+			             & x^2 + 4x + 4 = 2x + 4                                             & \\
+			             & x^2 + 2x = 0 \implies (x_1, x_2) = (0, -2)                        & \\
+			             &                                                                   & \\
+			             & V = \pi \int_{-2}^{0} [(x + 2)^2 - 2x - 4] dx                     & \\
+			             & V = \pi \int_{-2}^{0} (x^2 + 2x) dx                               & \\
+			             & \frac{ x^3 }{ 3 } \bigg\rvert_{-2}^{0} + x^2 \bigg\rvert_{-2}^{0} & \\
+			             & \frac{ (-2)^3 }{ 3 } + (-2)^2                                     & \\
+			             & - \frac{ 8 }{ 3 } + 4                                             & \\
+			             & V = \frac{ 4 }{ 3 } \pi                                           & \\
+		            \end{flalign*}
+
+		      \item \begin{flalign*}
+			             & x = \frac{ \sqrt{2y} }{ y^2 + 1 } & \\
+			             & x = 0                             & \\
+			             & y = 1                             & \\
+			             &                                   & \\
+			             & \frac{ \sqrt{2y} }{ y^2 + 1 } = 0 & \\
+			             & \sqrt{2y} = 0 \implies y = 0      & \\
+		            \end{flalign*}
+	      \end{enumerate}
+
+	\item \begin{enumerate}
+		      \item \begin{flalign*}
+			             &  & \\
+		            \end{flalign*}
+
+	      \end{enumerate}
+\end{enumerate}
+\end{document}
