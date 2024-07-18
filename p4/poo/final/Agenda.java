@@ -82,7 +82,7 @@ public class Agenda {
     }
 
     public List<Contato> contatos() {
-        return new ArrayList<>(contatos);
+        return contatos;
     }
 
     private void salvarContatos() {
@@ -133,9 +133,9 @@ public class Agenda {
     }
 
     private void validarTelefone(String telefone) throws TelefoneInvalidoException {
-        if (!telefone.matches("\\d{10,11}")) {
+        if (!telefone.matches("\\d{9,13}")) {
             throw new TelefoneInvalidoException(
-                    "Telefone inválido: O número deve conter 10 ou 11 dígitos.");
+                    "Telefone inválido: O número deve conter 9 ou 13 dígitos.");
         }
     }
 }
